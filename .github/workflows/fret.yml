@@ -1,6 +1,6 @@
 name: fret
 on: push
-job:
+jobs:
    job1:
        name: First Job
        runs-on: ubuntu-latest
@@ -9,7 +9,7 @@ job:
              uses: actions/checkout@v2
            - name: step two
              run: env | sort
-    job2:
+   job2:
        name: Second Job
        runs-on: windows-latest
        steps:
